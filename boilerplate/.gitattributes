@@ -1,0 +1,206 @@
+# Based on FPS-sample: https://github.com/Unity-Technologies/FPSSample
+# Organized+extended by Lex-DRL: https://github.com/Lex-DRL
+# Further Organized+extended by Mitchkm: https://github.com/mitchkm
+
+# =========================================================================== #
+# 	Git Text File Line Endings
+# =========================================================================== #
+
+# Auto-detect text/binary by default:
+* 	text=auto
+
+# raw-Text files
+*.[Cc][Ss][Vv] text                                             
+*.[Mm][Dd] text                                                 
+*.[Tt][Xx][Tt] text                                             
+
+# Checksums
+*.[Mm][Dd]5 text                                                
+*.[Ss][Hh][Aa] text                                             
+*.[Ss][Hh][Aa][0123456789]* text                                
+
+# Scripts: OS
+*.[Bb][Aa][Tt] text                                             
+*.[Cc][Mm][Dd] text                                             
+*.[Pp][Ll] text                                                 
+*.[Pp][Ss]1 text                                                
+*.[Ss][Hh] text eol=lf                                          
+
+# Scripts: various Programming languages
+*.[Cc] text                                                     
+*.[Cc][Ss] diff=csharp text                                     
+*.[Cc][Pp][Pp] diff=cpp text                                    
+*.[Cc][Ss][Ss] diff=css text                                    
+*.[Hh][Tt][Mm] text                                             
+*.[Hh][Tt][Mm][Ll] diff=html text                               
+*.[Jj][Ss] text                                                 
+*.[Jj][Ss][Oo][Nn] text                                         
+*.[Jj][Aa][Vv][Aa] diff=java text                               
+*.[Pp][Hh][Pp] diff=php text                                    
+*.[Pp][Yy] diff=python text                                     
+*.[Ss][Qq][Ll] text=auto eol=lf                                 
+*.[Xx][Mm][Ll] text                                             
+*.[Xx][Hh][Tt][Mm][Ll] text                                     
+
+# Vector graphics
+*.[Ss][Vv][Gg] text                                             
+*.[Aa][Ii] text                                                 
+
+
+# -----------------------------------------------
+# CG-related (3D) text formats
+# -----------------------------------------------
+# Nuke
+*.[Nn][Kk] text                                                 
+*.[Gg][Ii][Zz][Mm][Oo] text                                     
+
+# Maya
+*.[Mm][Ee][Ll] text                                             
+
+
+# -----------------------------------------------
+# Unity-related text files
+# -----------------------------------------------
+*.asset text=auto eol=lf
+
+# Shading
+*.cginc text
+*.compute text
+*.giparams text
+*.glsl text
+*.hlsl text
+*.mat text
+*.shader text
+*.shadervariants text
+*.[Ss]hader[Gg]raph text
+
+# Physics
+*.[Pp]hysic[Mm]aterial text
+*.[Pp]hysic[Mm]aterial[23][dD] text
+
+# Other Unity's text files
+*.anim text
+*.asmdef text
+*.controller text
+*.guiskin text
+*.mask text
+*.meta text
+*.mixer text
+*.overrideController text
+*.playable text
+*.prefab text
+*.[Ss]prite[Aa]tlas text
+*.unity text
+
+# Collapse Unity-generated files on GitHub
+*.asset linguist-generated
+*.mat linguist-generated
+*.meta linguist-generated
+*.prefab linguist-generated
+*.unity linguist-generated
+
+# =========================================================================== #
+# 	LFS binary formats
+# =========================================================================== #
+
+*.[Dd][Bb] filter=lfs diff=lfs merge=lfs -text                  
+*.[Mm][Dd][Bb] filter=lfs diff=lfs merge=lfs -text              
+*.[Pp][Dd][Tt] filter=lfs diff=lfs merge=lfs -text              
+
+# Archives
+*.7[Zz] filter=lfs diff=lfs merge=lfs -text                     
+*.[Gg][Zz] filter=lfs diff=lfs merge=lfs -text                  
+*.[TtRr][Aa][Rr] filter=lfs diff=lfs merge=lfs -text            
+*.[Zz][Ii][Pp] filter=lfs diff=lfs merge=lfs -text              
+
+# OS libraries
+*.[Dd][Ll][Ll] filter=lfs diff=lfs merge=lfs -text              
+*.[Ss][Oo] filter=lfs diff=lfs merge=lfs -text                  
+*.[Ss][Yy][Ss] filter=lfs diff=lfs merge=lfs -text              
+*.[Bb][Yy][Tt][Ee][Ss] filter=lfs diff=lfs merge=lfs -text      
+
+# Python binaries:
+*.[Pp][Yy][Dd] filter=lfs diff=lfs merge=lfs -text              
+*.[Pp][Dd][Bb] filter=lfs diff=lfs merge=lfs -text              
+*.[Ww][Hh][Ll] filter=lfs diff=lfs merge=lfs -text              
+
+# Fonts
+*.[Ee][Oo][Tt] filter=lfs diff=lfs merge=lfs -text              
+*.[OoTt][Tt][Ff] filter=lfs diff=lfs merge=lfs -text            
+*.[Ww][Oo][Ff][Ff] filter=lfs diff=lfs merge=lfs -text          
+*.[Ww][Oo][Ff][Ff]2 filter=lfs diff=lfs merge=lfs -text         
+
+# Images: Primary
+*.[Bb][Mm][Pp] filter=lfs diff=lfs merge=lfs -text              
+*.[Ee][Xx][Rr] filter=lfs diff=lfs merge=lfs -text              
+*.[Gg][Ii][Ff] filter=lfs diff=lfs merge=lfs -text              
+*.[Hh][Dd][Rr] filter=lfs diff=lfs merge=lfs -text              
+*.[Ii][Ff][Ff] filter=lfs diff=lfs merge=lfs -text              
+*.[Jj][Pp][Ee][Gg] filter=lfs diff=lfs merge=lfs -text          
+*.[Jj][Pp][Gg] filter=lfs diff=lfs merge=lfs -text              
+*.[Pp][Ii][Cc][Tt] filter=lfs diff=lfs merge=lfs -text          
+*.[Pp][Nn][Gg] filter=lfs diff=lfs merge=lfs -text              
+*.[Pp][Dd][Ff] filter=lfs diff=lfs merge=lfs -text              
+*.[Pp][Ss][DdBb] filter=lfs diff=lfs merge=lfs -text            
+*.[Tt][Gg][Aa] filter=lfs diff=lfs merge=lfs -text              
+*.[Tt][Ii][Ff] filter=lfs diff=lfs merge=lfs -text              
+*.[Tt][Ii][Ff][Ff] filter=lfs diff=lfs merge=lfs -text          
+
+# Audio
+*.[Aa][Aa][Cc] filter=lfs diff=lfs merge=lfs -text              
+*.[AaFf][Ll][Aa][Cc] filter=lfs diff=lfs merge=lfs -text        
+*.[Aa][Ii][Ff] filter=lfs diff=lfs merge=lfs -text              
+*.[Aa][Ii][Ff][Ff] filter=lfs diff=lfs merge=lfs -text          
+*.[Ii][Tt] filter=lfs diff=lfs merge=lfs -text                  
+*.[Mm]4[Aa] filter=lfs diff=lfs merge=lfs -text                 
+*.[Mm][Oo][Dd] filter=lfs diff=lfs merge=lfs -text              
+*.[Mm][Pp][12345] filter=lfs diff=lfs merge=lfs -text           
+*.[Oo][Gg][GgAa] filter=lfs diff=lfs merge=lfs -text            
+*.[Ss]3[Mm] filter=lfs diff=lfs merge=lfs -text                 
+*.[Ww][Aa][Vv] filter=lfs diff=lfs merge=lfs -text              
+*.[Xx][Mm] filter=lfs diff=lfs merge=lfs -text                  
+
+# Video
+# mp4 catched by audio pattern
+*.[Aa][Vv][Ii] filter=lfs diff=lfs merge=lfs -text              
+*.[Bb][Ii][Kk] filter=lfs diff=lfs merge=lfs -text              
+*.[Mm][Kk][Vv] filter=lfs diff=lfs merge=lfs -text              
+*.[Oo][Gg][VvXx] filter=lfs diff=lfs merge=lfs -text            
+
+
+# -----------------------------------------------
+# CG-related (3D)
+# -----------------------------------------------
+*.3[Dd][Mm] filter=lfs diff=lfs merge=lfs -text                 
+*.3[Dd][Ss] filter=lfs diff=lfs merge=lfs -text                 
+*.[Bb]lend filter=lfs diff=lfs merge=lfs -text                  
+*.[Cc]4[Dd] filter=lfs diff=lfs merge=lfs -text                 
+*.[Cc]ollada filter=lfs diff=lfs merge=lfs -text                
+*.[Dd][Aa][Ee] filter=lfs diff=lfs merge=lfs -text              
+*.[Dd][Xx][Ff] filter=lfs diff=lfs merge=lfs -text              
+*.[Ff][Bb][Xx] filter=lfs diff=lfs merge=lfs                    
+*.[Jj][Aa][Ss] filter=lfs diff=lfs merge=lfs -text              
+*.[Ll][Ww][Ss] filter=lfs diff=lfs merge=lfs -text              
+*.[Ll][Xx][Oo] filter=lfs diff=lfs merge=lfs -text              
+*.[Mm][Aa] filter=lfs diff=lfs merge=lfs                        
+*.[Mm][Aa][Xx] filter=lfs diff=lfs merge=lfs -text              
+*.[Mm][Bb] filter=lfs diff=lfs merge=lfs -text                  
+*.[Oo][Bb][Jj] filter=lfs diff=lfs merge=lfs                    
+*.[Pp][Ll][Yy] filter=lfs diff=lfs merge=lfs -text              
+*.[Ss][Bb][Ss][Aa][Rr] filter=lfs diff=lfs merge=lfs            
+*.[Ss][Kk][Pp] filter=lfs diff=lfs merge=lfs -text              
+*.[Ss][Tt][Ll] filter=lfs diff=lfs merge=lfs -text              
+*.[Zz][Tt][Ll] filter=lfs diff=lfs merge=lfs -text              
+
+
+# -----------------------------------------------
+# Unity-related
+# -----------------------------------------------
+*.entities filter=lfs diff=lfs merge=lfs -text
+*.bundle filter=lfs diff=lfs merge=lfs -text
+
+
+# -----------------------------------------------
+# Unity-FMOD-related
+# -----------------------------------------------
+*.bank filter=lfs diff=lfs merge=lfs -text

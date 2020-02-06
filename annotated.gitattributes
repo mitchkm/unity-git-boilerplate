@@ -1,0 +1,206 @@
+# Based on FPS-sample: https://github.com/Unity-Technologies/FPSSample
+# Organized+extended by Lex-DRL: https://github.com/Lex-DRL
+# Further Organized+extended by Mitchkm: https://github.com/mitchkm
+
+# =========================================================================== #
+# 	Git Text File Line Endings
+# =========================================================================== #
+
+# Auto-detect text/binary by default:
+* 	text=auto
+
+# raw-Text files
+*.[Cc][Ss][Vv] text                                             # .csv
+*.[Mm][Dd] text                                                 # .md
+*.[Tt][Xx][Tt] text                                             # .txt
+
+# Checksums
+*.[Mm][Dd]5 text                                                # .md5
+*.[Ss][Hh][Aa] text                                             # .sha
+*.[Ss][Hh][Aa][0123456789]* text                                # .sha#*
+
+# Scripts: OS
+*.[Bb][Aa][Tt] text                                             # .bat
+*.[Cc][Mm][Dd] text                                             # .cmd
+*.[Pp][Ll] text                                                 # .pl
+*.[Pp][Ss]1 text                                                # .ps1
+*.[Ss][Hh] text eol=lf                                          # .sh
+
+# Scripts: various Programming languages
+*.[Cc] text                                                     # .c
+*.[Cc][Ss] diff=csharp text                                     # .cs
+*.[Cc][Pp][Pp] diff=cpp text                                    # .cpp
+*.[Cc][Ss][Ss] diff=css text                                    # .css
+*.[Hh][Tt][Mm] text                                             # .htm
+*.[Hh][Tt][Mm][Ll] diff=html text                               # .html
+*.[Jj][Ss] text                                                 # .js
+*.[Jj][Ss][Oo][Nn] text                                         # .json
+*.[Jj][Aa][Vv][Aa] diff=java text                               # .java  
+*.[Pp][Hh][Pp] diff=php text                                    # .php
+*.[Pp][Yy] diff=python text                                     # .py
+*.[Ss][Qq][Ll] text=auto eol=lf                                 # .sql
+*.[Xx][Mm][Ll] text                                             # .xml
+*.[Xx][Hh][Tt][Mm][Ll] text                                     # .xhtml
+
+# Vector graphics
+*.[Ss][Vv][Gg] text                                             # .svg
+*.[Aa][Ii] text                                                 # .ai
+
+
+# -----------------------------------------------
+# CG-related (3D) text formats
+# -----------------------------------------------
+# Nuke
+*.[Nn][Kk] text                                                 # .nk
+*.[Gg][Ii][Zz][Mm][Oo] text                                     # .gizmo
+
+# Maya
+*.[Mm][Ee][Ll] text                                             # .mel
+
+
+# -----------------------------------------------
+# Unity-related text files
+# -----------------------------------------------
+*.asset text=auto eol=lf
+
+# Shading
+*.cginc text
+*.compute text
+*.giparams text
+*.glsl text
+*.hlsl text
+*.mat text
+*.shader text
+*.shadervariants text
+*.[Ss]hader[Gg]raph text
+
+# Physics
+*.[Pp]hysic[Mm]aterial text
+*.[Pp]hysic[Mm]aterial[23][dD] text
+
+# Other Unity's text files
+*.anim text
+*.asmdef text
+*.controller text
+*.guiskin text
+*.mask text
+*.meta text
+*.mixer text
+*.overrideController text
+*.playable text
+*.prefab text
+*.[Ss]prite[Aa]tlas text
+*.unity text
+
+# Collapse Unity-generated files on GitHub
+*.asset linguist-generated
+*.mat linguist-generated
+*.meta linguist-generated
+*.prefab linguist-generated
+*.unity linguist-generated
+
+# =========================================================================== #
+# 	LFS binary formats
+# =========================================================================== #
+
+*.[Dd][Bb] filter=lfs diff=lfs merge=lfs -text                  # .db
+*.[Mm][Dd][Bb] filter=lfs diff=lfs merge=lfs -text              # .mdb
+*.[Pp][Dd][Tt] filter=lfs diff=lfs merge=lfs -text              # .pdt
+
+# Archives
+*.7[Zz] filter=lfs diff=lfs merge=lfs -text                     # .7z
+*.[Gg][Zz] filter=lfs diff=lfs merge=lfs -text                  # .gz
+*.[TtRr][Aa][Rr] filter=lfs diff=lfs merge=lfs -text            # .tar
+*.[Zz][Ii][Pp] filter=lfs diff=lfs merge=lfs -text              # .zip
+
+# OS libraries
+*.[Dd][Ll][Ll] filter=lfs diff=lfs merge=lfs -text              # .dll
+*.[Ss][Oo] filter=lfs diff=lfs merge=lfs -text                  # .so
+*.[Ss][Yy][Ss] filter=lfs diff=lfs merge=lfs -text              # .sys
+*.[Bb][Yy][Tt][Ee][Ss] filter=lfs diff=lfs merge=lfs -text      # .bytes
+
+# Python binaries:
+*.[Pp][Yy][Dd] filter=lfs diff=lfs merge=lfs -text              # .pyd
+*.[Pp][Dd][Bb] filter=lfs diff=lfs merge=lfs -text              # .pdb
+*.[Ww][Hh][Ll] filter=lfs diff=lfs merge=lfs -text              # .whl
+
+# Fonts
+*.[Ee][Oo][Tt] filter=lfs diff=lfs merge=lfs -text              # .eot
+*.[OoTt][Tt][Ff] filter=lfs diff=lfs merge=lfs -text            # .otf .ttf
+*.[Ww][Oo][Ff][Ff] filter=lfs diff=lfs merge=lfs -text          # .woff
+*.[Ww][Oo][Ff][Ff]2 filter=lfs diff=lfs merge=lfs -text         # .woff2
+
+# Images: Primary
+*.[Bb][Mm][Pp] filter=lfs diff=lfs merge=lfs -text              # .bmp
+*.[Ee][Xx][Rr] filter=lfs diff=lfs merge=lfs -text              # .exr
+*.[Gg][Ii][Ff] filter=lfs diff=lfs merge=lfs -text              # .gif
+*.[Hh][Dd][Rr] filter=lfs diff=lfs merge=lfs -text              # .hdr
+*.[Ii][Ff][Ff] filter=lfs diff=lfs merge=lfs -text              # .iff
+*.[Jj][Pp][Ee][Gg] filter=lfs diff=lfs merge=lfs -text          # .jpeg
+*.[Jj][Pp][Gg] filter=lfs diff=lfs merge=lfs -text              # .jpg
+*.[Pp][Ii][Cc][Tt] filter=lfs diff=lfs merge=lfs -text          # .pict
+*.[Pp][Nn][Gg] filter=lfs diff=lfs merge=lfs -text              # .png
+*.[Pp][Dd][Ff] filter=lfs diff=lfs merge=lfs -text              # .pdf
+*.[Pp][Ss][DdBb] filter=lfs diff=lfs merge=lfs -text            # .psd .psb
+*.[Tt][Gg][Aa] filter=lfs diff=lfs merge=lfs -text              # .tga
+*.[Tt][Ii][Ff] filter=lfs diff=lfs merge=lfs -text              # .tif
+*.[Tt][Ii][Ff][Ff] filter=lfs diff=lfs merge=lfs -text          # .tiff
+
+# Audio
+*.[Aa][Aa][Cc] filter=lfs diff=lfs merge=lfs -text              # .aac
+*.[AaFf][Ll][Aa][Cc] filter=lfs diff=lfs merge=lfs -text        # .alac .flac
+*.[Aa][Ii][Ff] filter=lfs diff=lfs merge=lfs -text              # .aif
+*.[Aa][Ii][Ff][Ff] filter=lfs diff=lfs merge=lfs -text          # .aiff
+*.[Ii][Tt] filter=lfs diff=lfs merge=lfs -text                  # .it
+*.[Mm]4[Aa] filter=lfs diff=lfs merge=lfs -text                 # .m4a
+*.[Mm][Oo][Dd] filter=lfs diff=lfs merge=lfs -text              # .mod
+*.[Mm][Pp][12345] filter=lfs diff=lfs merge=lfs -text           # .mp#
+*.[Oo][Gg][GgAa] filter=lfs diff=lfs merge=lfs -text            # .ogg .oga
+*.[Ss]3[Mm] filter=lfs diff=lfs merge=lfs -text                 # .s3m
+*.[Ww][Aa][Vv] filter=lfs diff=lfs merge=lfs -text              # .wav
+*.[Xx][Mm] filter=lfs diff=lfs merge=lfs -text                  # .xm
+
+# Video
+# mp4 catched by audio pattern
+*.[Aa][Vv][Ii] filter=lfs diff=lfs merge=lfs -text              # .avi
+*.[Bb][Ii][Kk] filter=lfs diff=lfs merge=lfs -text              # .blk
+*.[Mm][Kk][Vv] filter=lfs diff=lfs merge=lfs -text              # .mkv
+*.[Oo][Gg][VvXx] filter=lfs diff=lfs merge=lfs -text            # .ogv .ogx
+
+
+# -----------------------------------------------
+# CG-related (3D)
+# -----------------------------------------------
+*.3[Dd][Mm] filter=lfs diff=lfs merge=lfs -text                 # .3dm
+*.3[Dd][Ss] filter=lfs diff=lfs merge=lfs -text                 # .3ds
+*.[Bb]lend filter=lfs diff=lfs merge=lfs -text                  # .blend
+*.[Cc]4[Dd] filter=lfs diff=lfs merge=lfs -text                 # .c4d
+*.[Cc]ollada filter=lfs diff=lfs merge=lfs -text                # .collada
+*.[Dd][Aa][Ee] filter=lfs diff=lfs merge=lfs -text              # .dae
+*.[Dd][Xx][Ff] filter=lfs diff=lfs merge=lfs -text              # .dxf
+*.[Ff][Bb][Xx] filter=lfs diff=lfs merge=lfs                    # .fbx
+*.[Jj][Aa][Ss] filter=lfs diff=lfs merge=lfs -text              # .jas
+*.[Ll][Ww][Ss] filter=lfs diff=lfs merge=lfs -text              # .lws
+*.[Ll][Xx][Oo] filter=lfs diff=lfs merge=lfs -text              # .lxo
+*.[Mm][Aa] filter=lfs diff=lfs merge=lfs                        # .ma
+*.[Mm][Aa][Xx] filter=lfs diff=lfs merge=lfs -text              # .max
+*.[Mm][Bb] filter=lfs diff=lfs merge=lfs -text                  # .mb
+*.[Oo][Bb][Jj] filter=lfs diff=lfs merge=lfs                    # .obj
+*.[Pp][Ll][Yy] filter=lfs diff=lfs merge=lfs -text              # .ply
+*.[Ss][Bb][Ss][Aa][Rr] filter=lfs diff=lfs merge=lfs            # .sbsar
+*.[Ss][Kk][Pp] filter=lfs diff=lfs merge=lfs -text              # .skp
+*.[Ss][Tt][Ll] filter=lfs diff=lfs merge=lfs -text              # .stl
+*.[Zz][Tt][Ll] filter=lfs diff=lfs merge=lfs -text              # .ztl
+
+
+# -----------------------------------------------
+# Unity-related
+# -----------------------------------------------
+*.entities filter=lfs diff=lfs merge=lfs -text
+*.bundle filter=lfs diff=lfs merge=lfs -text
+
+
+# -----------------------------------------------
+# Unity-FMOD-related
+# -----------------------------------------------
+*.bank filter=lfs diff=lfs merge=lfs -text
